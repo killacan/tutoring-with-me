@@ -4,8 +4,8 @@ export default function Navbar () {
 
     return (
         
-        <div className="flex justify-between items-center w-full bg-sky-600">
-            <h2 className="w-full text-black">Tutoring With Cameron</h2>
+        <div className="flex justify-between items-center w-full px-10 bg-slate-700 sticky top-0">
+            <h2 className="w-full font-burtons text-white">Tutoring With Cameron</h2>
             <div className="flex">
                 {navButton("Home", "/")}
                 {navButton("About", "/about")}
