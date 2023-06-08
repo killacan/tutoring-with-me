@@ -1,26 +1,27 @@
 import ShowBox from "./components/showbox"
+import Slides from "./components/slides"
 
 export default function Home() {
 
   let showboxes = [
     {
       id: 1,
-      title: "placeholder",
+      title: "Programming",
       description: "placeholder",
     },
     {
       id: 2,
-      title: "placeholder",
+      title: "Math",
       description: "placeholder",
     },
     {
       id: 3,
-      title: "placeholder",
+      title: "Reading",
       description: "placeholder",
     },
     {
       id: 4,
-      title: "placeholder",
+      title: "Writing",
       description: "placeholder",
     },
   ]
@@ -35,6 +36,8 @@ export default function Home() {
       )
     })
   }
+
+  
 
   return (
 
@@ -54,12 +57,13 @@ export default function Home() {
         
       </div>
 
-      <div className="flex items-center justify-center bg-purple-500 h-64 px-10">
-        <div className="grid grid-cols-4 border border-black h-60 w-full" >
-          {showboxBuilder()}
-          test text
+      <div className="flex items-center justify-center bg-sky-100 h-96 px-10">
+        <div className="grid gap-4 grid-cols-4 h-60 w-full" >
+        {showboxBuilder()}
         </div>
       </div>
+
+      <Slides />
         
       </main>
   )

@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='relative min-h-screen bg-sky-100 text-black'>
+        <div className='grid grid-rows-[70px_1fr_50px] relative min-h-screen bg-sky-100 text-black'>
           <Navbar />
             {children}
           <BottomNav />
