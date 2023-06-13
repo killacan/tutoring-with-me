@@ -1,17 +1,19 @@
 'use client';
 
-import "tw-elements/dist/css/tw-elements.min.css";
-
 import {
     Carousel,
     initTE,
 } from "tw-elements";
 
+import { useEffect } from "react";
+
 
 export default function Slides() {
     
-    initTE({ Carousel });
-
+    useEffect(() => {
+        initTE({ Carousel });
+    }, []);
+    
     return (
         <div
             id="carouselExampleCaptions"
@@ -51,8 +53,7 @@ export default function Slides() {
                 <div
                 className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-active
-                data-te-carousel-item
-                style={{backfaceVisibility: 'hidden'}}>
+                data-te-carousel-item>
                 <img
                     src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
                     className="block w-full"
@@ -85,8 +86,7 @@ export default function Slides() {
                 {/* <!--Third item--> */}
                 <div
                 className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-item
-                style={{backfaceVisibility: 'hidden'}}>
+                data-te-carousel-item>
                 <img
                     src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
                     className="block w-full"

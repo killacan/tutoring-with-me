@@ -7,8 +7,6 @@ import writing from '/public/writing.jpg'
 export default function ShowBox (props) {
 
     // title, description, img
-    console.log(props)
-
     let img = {
         "chart": chart,
         "code": code,
@@ -17,10 +15,12 @@ export default function ShowBox (props) {
     }
 
     return (
-        <div className="flex flex-col justify-center items-center bg-sky-300 w-full h-60 border border-black rounded-lg hover:scale-110 duration-300">
-            <Image src={img[props.img]} className="w-32 h-32" alt='...' />
-            <h3 className="text-xl font-bold">{props.title}</h3>
-            <p>{props.description}</p>
+        <div className="flex items-center w-4/5 mx-auto h-72 p-5 ">
+            <Image src={img[props.img]} className="w-1/3 h-full object-cover rounded-xl" alt='...' />
+            <div className='text-center w-1/2 mx-auto'>
+                <h3 className="text-3xl font-bold pb-4">{props.title}</h3>
+                <p>{props.description}</p>
+            </div>
         </div>
     )
 }
