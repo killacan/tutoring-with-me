@@ -1,7 +1,9 @@
 export default function About () {
     return (
         <>
-            <h1>Temporary about page</h1>
+            <h1>About me</h1>
+
+            <p></p>
         </>
     )
 }
