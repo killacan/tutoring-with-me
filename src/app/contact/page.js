@@ -1,7 +1,10 @@
+import ContactForm from "../components/contactform"
+
 export default function Contact () {
     return (
         <>
-            <h1>Temporary contact page</h1>
+
+            <ContactForm />
         </>
     )
 }

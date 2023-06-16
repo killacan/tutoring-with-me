@@ -1,5 +1,5 @@
 import ShowBox from "./components/showbox"
-import Slides from "./components/slides"
+// import Slides from "./components/slides"
 import OfferBox from "./components/offerbox";
 
 import "tw-elements/dist/css/tw-elements.min.css";
@@ -37,7 +37,7 @@ export default function Home() {
     {
       id: 1,
       title: "In Person",
-      text: "I offer in person tutoring sessions in the galveston area. I can meet you at your home for a one on one session covering the topics you need help with. For programming related tutoring I can provide an extra laptop for the session if needed."
+      text: "I offer in person tutoring sessions in the Galveston area. I can meet you at your home for a one on one session covering the topics you need help with. For programming related tutoring I can provide an extra laptop for the session if needed."
     },
     {
       id: 2,
