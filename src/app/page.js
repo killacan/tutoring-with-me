@@ -75,11 +75,11 @@ export default function Home() {
 
   return (
 
-    <main className="flex-col text-black" >
+    <main id="top" className="flex-col text-black" >
 
       <Welcome />
 
-      <div className="flex flex-col items-center justify-center bg-sky-100 xlg:p-10 md:p-7 sm:p-5 ">
+      <div id="subjects" className="flex flex-col items-center justify-center bg-sky-100 xlg:p-10 md:p-7 sm:p-5 ">
         <h2 className="text-4xl font-bold text-center">Subjects</h2>
         <div className="flex flex-col h-auto w-full divide-y-2 divide-black" >
           {showboxBuilder()}
@@ -89,7 +89,7 @@ export default function Home() {
         <Slides />
       </div> */}
 
-      <div className="flex flex-col p-0 md:p-10">
+      <div id="offers" className="flex flex-col p-0 md:p-10">
         <h2 className="text-4xl font-bold text-center py-10">What I Offer</h2>
         <div className="flex flex-row justify-center divide-x-2 divide-black">
           {offerBoxBuilder()}

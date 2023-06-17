@@ -1,6 +1,6 @@
 export default function ContactMe () {
     return (
-        <div className="flex justify-center ">
+        <div id="contact" className="flex justify-center ">
             <div className="flex flex-col content-center items-center border border-black my-10 p-10 mx-5 rounded-lg max-h-96">
                 <h1 className="text-2xl my-auto">Contact Me!</h1>
 
