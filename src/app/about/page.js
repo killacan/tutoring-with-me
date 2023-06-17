@@ -1,9 +1,11 @@
 import ContactForm from "../components/contactform"
 import ContactMe from "../components/contactme"
+import Welcome from "../components/welcome"
 
 export default function About () {
     return (
         <div className="flex flex-col items-center">
+
             <div className="flex flex-col w-[640px] content-center justify-items-center">
                 <h1 className="text-3xl py-5">About me</h1>
 
@@ -16,9 +18,9 @@ export default function About () {
                 <ul className="list-disc pl-5">
                     <li>Graduated from App Academy, a renowned coding bootcamp known for its intensive curriculum.</li>
 
-                    <li>Acquired expertise in JavaScript, Ruby, HTML, and CSS3, gaining a solid foundation in web development. </li>
+                    <li>My expertise in JavaScript, Ruby, HTML, and CSS3, gaining a solid foundation in web development. </li>
 
-                    <li>Pursued self-study in Python to expand my programming knowledge and repertoire, culminating in creating my own AI Chatbot.</li>
+                    <li>Self taught in Python to expand my programming knowledge, leading to the creation of my own AI Chatbot.</li>
                     
                 </ul>
 

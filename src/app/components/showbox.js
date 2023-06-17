@@ -15,11 +15,11 @@ export default function ShowBox (props) {
     }
 
     return (
-        <div className="flex items-center w-4/5 mx-auto h-72 p-5 ">
+        <div className="flex items-center w-full md:w-4/5 mx-auto h-72 p-5 ">
             <Image src={img[props.img]} className="w-1/3 h-full object-cover rounded-xl" alt='...' />
             <div className='text-center w-1/2 mx-auto'>
                 <h3 className="text-3xl font-bold pb-4">{props.title}</h3>
-                <p>{props.description}</p>
+                <p className='hidden md:block'>{props.description}</p>
             </div>
         </div>
     )

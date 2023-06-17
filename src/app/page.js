@@ -2,8 +2,7 @@ import ShowBox from "./components/showbox"
 // import Slides from "./components/slides"
 import OfferBox from "./components/offerbox";
 import ContactMe from "./components/contactme";
-
-import "tw-elements/dist/css/tw-elements.min.css";
+import Welcome from "./components/welcome";
 
 export default function Home() {
 
@@ -78,19 +77,7 @@ export default function Home() {
 
     <main className="flex-col text-black" >
 
-      <div className="flex flex-col items-center p-32 bg-blue-700" >
-
-        <div className="flex flex-col p-10 bg-black/30">
-          <h1 className="flex items-center justify-center text-yellow-500 my-auto h-32">
-            Looking for a tutor?
-          </h1>
-          
-          <h2 className="text-6xl oldbg-[#6c22a5] text-center max-w-xl h-32 text-white">
-            Tutoring with Cameron
-          </h2>
-        </div>
-        
-      </div>
+      <Welcome />
 
       <div className="flex flex-col items-center justify-center bg-sky-100 xlg:p-10 md:p-7 sm:p-5 ">
         <h2 className="text-4xl font-bold text-center">Subjects</h2>
@@ -102,7 +89,7 @@ export default function Home() {
         <Slides />
       </div> */}
 
-      <div className="flex flex-col p-10">
+      <div className="flex flex-col p-0 md:p-10">
         <h2 className="text-4xl font-bold text-center py-10">What I Offer</h2>
         <div className="flex flex-row justify-center divide-x-2 divide-black">
           {offerBoxBuilder()}
