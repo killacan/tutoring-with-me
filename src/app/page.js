@@ -1,6 +1,7 @@
 import ShowBox from "./components/showbox"
 // import Slides from "./components/slides"
 import OfferBox from "./components/offerbox";
+import ContactMe from "./components/contactme";
 
 import "tw-elements/dist/css/tw-elements.min.css";
 
@@ -79,12 +80,12 @@ export default function Home() {
 
       <div className="flex flex-col items-center p-32 bg-blue-700" >
 
-        <div className="flex flex-col p-10 bg-black/20">
+        <div className="flex flex-col p-10 bg-black/30">
           <h1 className="flex items-center justify-center text-yellow-500 my-auto h-32">
             Looking for a tutor?
           </h1>
           
-          <h2 className="text-6xl oldbg-[#6c22a5] text-center max-w-xl h-32">
+          <h2 className="text-6xl oldbg-[#6c22a5] text-center max-w-xl h-32 text-white">
             Tutoring with Cameron
           </h2>
         </div>
@@ -107,6 +108,8 @@ export default function Home() {
           {offerBoxBuilder()}
         </div>
       </div>
+
+      <ContactMe />
         
       </main>
   )
