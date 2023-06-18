@@ -45,6 +45,12 @@ export default function Home() {
       title: "Online",
       text: "Online tutoring sessions via zoom or your preferred conference software. I can share my screen with you and we can work through problems together. I can also provide a link for a google doc so we can work collaboratively with live comments and edits. For programming related tutoring I can provide a link to a repl.it session so we can work on code together.",
       price: "$35/hr",
+    },
+    {
+      id: 3,
+      title: "Code Review",
+      text: "I can review your code and provide feedback on how to improve it. I can also help you debug your code and find the source of any errors.",
+      price: "$50/hr",
     }
 
   ]
@@ -94,7 +100,7 @@ export default function Home() {
 
       <div id="offers" className="flex flex-col p-0 md:p-10">
         <h2 className="text-4xl font-bold text-center py-10">What I Offer</h2>
-        <div className="flex flex-row justify-center divide-x-2 divide-black">
+        <div className={`grid md:grid-cols-2 justify-center`}>
           {offerBoxBuilder()}
         </div>
       </div>
