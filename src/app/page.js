@@ -37,12 +37,14 @@ export default function Home() {
     {
       id: 1,
       title: "In Person",
-      text: "I offer in person tutoring sessions in the Galveston area. I can meet you at your home for a one on one session covering the topics you need help with. For programming related tutoring I can provide an extra laptop for the session if needed."
+      text: "In person tutoring sessions in the Galveston area. I can meet you at your home for a one on one session covering the topics you need help with. For programming related tutoring I can provide an extra laptop for the session if needed.",
+      price: "$40/hr",
     },
     {
       id: 2,
       title: "Online",
-      text: "I offer online tutoring sessions via zoom. I can share my screen with you and we can work through problems together. I can also provide a link for a google doc so we can work collaboratively with live comments and edits. For programming related tutoring I can provide a link to a repl.it session so we can work on code together."
+      text: "Online tutoring sessions via zoom or your preferred conference software. I can share my screen with you and we can work through problems together. I can also provide a link for a google doc so we can work collaboratively with live comments and edits. For programming related tutoring I can provide a link to a repl.it session so we can work on code together.",
+      price: "$35/hr",
     }
 
   ]
@@ -67,6 +69,7 @@ export default function Home() {
           key={offerBox.id}
           title={offerBox.title}
           text={offerBox.text}
+          price={offerBox.price}
         />
       )
     })
@@ -79,8 +82,8 @@ export default function Home() {
 
       <Welcome />
 
-      <div id="subjects" className="flex flex-col items-center justify-center bg-sky-100 xlg:p-10 md:p-7 sm:p-5 ">
-        <h2 className="text-4xl font-bold text-center">Subjects</h2>
+      <div id="subjects" className="flex flex-col items-center justify-center bg-sky-100 lg:p-10 md:p-7 sm:p-5 ">
+        <h2 className="text-4xl font-bold text-center pt-10">Subjects</h2>
         <div className="flex flex-col h-auto w-full divide-y-2 divide-black" >
           {showboxBuilder()}
         </div>

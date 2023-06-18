@@ -56,7 +56,7 @@ export default function Services () {
                 <p className="text-center">I offer in person tutoring sessions in the Galveston area. I can meet you at your home for a one on one session covering the topics you need help with. For programming related tutoring I can provide an extra laptop for the session if needed.</p>
             </div>
 
-            <div className="flex flex-col items-center justify-center bg-sky-100 xlg:p-10 md:p-7 sm:p-5 ">
+            <div className="flex flex-col items-center justify-center bg-sky-100 lg:p-10 md:p-7 sm:p-5 ">
         <h2 className="text-4xl font-bold text-center">Subjects</h2>
         <div className="flex flex-col h-auto w-full divide-y-2 divide-black" >
           {showboxBuilder()}
