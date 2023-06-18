@@ -19,7 +19,7 @@ export default function Navbar () {
     // )
 
     return (
-        <div className="flex justify-between items-center w-full xlg:p-10 md:p-7 sm:p-5 bg-slate-700 sticky top-0 z-10">
+        <div className="flex justify-between items-center w-full xlg:p-10 md:p-7 sm:p-5 bg-slate-700 sticky top-0 z-10 text-white">
             {InPageLink("Tutoring With Cameron", "top")}
             <div className="flex">
                 {InPageLink("Home", "#top")}

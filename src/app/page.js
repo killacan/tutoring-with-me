@@ -75,7 +75,7 @@ export default function Home() {
 
   return (
 
-    <main id="top" className="flex-col text-black" >
+    <main className="flex-col text-black" >
 
       <Welcome />
 
